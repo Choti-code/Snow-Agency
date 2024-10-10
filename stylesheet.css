@@ -1,23 +1,84 @@
+   
+* {
+    margin: 10px 20x;;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+ 
+body {
+    font-family: Georgia, serif;
+    background-color: AliceBlue;  
+    color: DarkSlateGray;  
+    line-height: 1.6;
+}
 
-body{background-color:blue;
+ 
+h1, h4 {
+    color: MidnightBlue;  
+    margin: 20px 0;
 }
-h1
-{font-weight:bold;
-font-family:Arial;
-text-align:center;
-color:white;
-font-size:18;
-font-weight:bold;
+
+ 
+table {
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: collapse;
 }
-h4
-{
-font-size:14;
-text-align:left;
-font-weight:bold;
-color:Green;
+
+td {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid DodgerBlue;  
 }
-table
-{background-color:white;
-border:5px solid blue;
+
+h5 {
+    color: SteelBlue;  
+}
+
+ 
+nav {
+    text-align: center;
+    margin: 20px ;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: SteelBlue;
+    font-weight: bold;
+}
+
+ 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ 
+i {
+    font-style: italic;
+    color: SlateGray;  
+}
+ 
+a {
+    color: SteelBlue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+p{
+	text-align:left
+
 }
