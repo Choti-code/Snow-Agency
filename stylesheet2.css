@@ -1,0 +1,270 @@
+  
+* {
+    margin: 10px 20px;  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ 
+body {
+    font-family: 'Gill Sans', sans-serif;
+    background-color: AliceBlue;   
+    color: DarkSlateGray;   
+    line-height: 1.6;
+    font-size: 1.1rem;   
+}
+ 
+h1, h3, h4 {
+    color: MidnightBlue;   
+    text-transform: uppercase;   
+    letter-spacing: 1px;   
+}
+
+h1 {
+    font-size: 3rem;   
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+ 
+table {
+    width: 60%;   
+    margin: 30px auto;
+    border-collapse: collapse;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid DodgerBlue;  
+    background-color: white;
+    transition: background-color 0.3s ease;  
+}
+
+td:hover {
+    background-color: AliceBlue;   
+}
+ 
+h5 {
+    color: SteelBlue;   
+    font-style: italic;  
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: left;   
+    font-size: 1.2rem;   
+    line-height: 1.8;   
+    margin-bottom: 20px;
+}
+
+ 
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px;   
+}
+
+nav ul li a {
+    color: SteelBlue;   
+    font-weight: bold;
+    font-size: 1.2rem;   
+    text-decoration: none;   
+    transition: color 0.3s ease;   
+}
+
+nav ul li a:hover {
+    text-decoration: underline;   
+    color: MidnightBlue;  
+}
+
+ 
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+}
+
+ 
+i {
+    font-style: italic;
+    color: SlateGray;   
+    font-size: 1 rem;   
+}
+
+ 
+a {
+    color: SteelBlue;
+    font-weight: bold;
+    text-decoration: none;   
+    transition: color 0.3s ease;   
+}
+
+a:hover {
+    text-decoration: underline;
+    color: MidnightBlue;   
+}
+
+ 
+section {
+    margin-bottom: 40px;
+}
+
+ 
+.section-header {
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: MidnightBlue;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+ 
+.trip-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.trip {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;   
+}
+
+.trip:hover {
+    transform: translateY(-10px);   
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+}
+
+.trip h3 {
+    font-size: 1.6rem;
+    color: MidnightBlue;
+    margin-bottom: 15px;
+}
+
+.trip p {
+    font-size: 1rem;
+    color: DarkSlateGray;
+    line-height: 1.6;
+}
+ 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+main {
+    animation: fadeIn 1s ease-out;
+}
+
+ 
+@media (max-width: 600px) {
+     
+    .trip-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trip {
+        width: 90%;   
+    }
+
+     
+    nav ul li {
+        display: block;   
+        margin: 10px 0;
+    }
+
+     
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+     
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+ 
+@media (min-width: 600px) and (max-width: 1024px) {
+    .trip-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .trip {
+        width: 45%;   
+    }
+
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 2.3rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 10px 15px;
+    }
+}
+
+ 
+@media (min-width: 1024px) {
+    .trip-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .trip {
+        width: 20%;   
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .section-header h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
