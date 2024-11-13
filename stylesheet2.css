@@ -1,5 +1,6 @@
- * {
-    margin: 10px 20x;;
+   
+* {
+    margin: 10px 20px;  
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,18 +8,17 @@
  
 body {
     font-family: Georgia, serif;
-    background-color: AliceBlue;  
-    color: DarkSlateGray;  
+    background-color: AliceBlue;
+    color: DarkSlateGray;
     line-height: 1.6;
 }
 
  
 h1, h4 {
-    color: MidnightBlue;  
+    color: MidnightBlue;
     margin: 20px 0;
 }
-
- 
+  
 table {
     width: 50%;
     margin: 30px auto;
@@ -28,17 +28,17 @@ table {
 td {
     padding: 20px;
     text-align: center;
-    border: 2px solid DodgerBlue;  
+    border: 2px solid DodgerBlue;
 }
 
 h5 {
-    color: SteelBlue;  
+    color: SteelBlue;
 }
 
  
 nav {
     text-align: center;
-    margin: 20px ;
+    margin: 20px;
 }
 
 nav ul {
@@ -56,18 +56,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
- 
-i {
-    font-style: italic;
-    color: SlateGray;  
-}
- 
 a {
     color: SteelBlue;
 }
@@ -75,11 +63,13 @@ a {
 a:hover {
     text-decoration: underline;
 }
-p{
-	text-align:left
 
+ 
+p {
+    text-align: left;
 }
 
+ 
 .container {
     display: flex;
     flex-wrap: nowrap;
@@ -88,35 +78,37 @@ p{
 }
 
 .container img {
-width: 25%;
-margin: 1vw;
-flex-grow: 0; 
-flex-shrink: 1; 
+    width: 25%;
+    margin: 1vw;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
 
 .container p {
-width: 35%;
-text-align: center;
-font-size: 2vw;
-flex-grow: 1;
-flex-shrink: 1;
-display: flex; 
-justify-content: center; 
-align-items: center; 
+    width: 35%;
+    text-align: center;
+    font-size: 2vw;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+ 
 .animated-text {
     font-size: 20px;
     font-weight: bold;
     color: blue;
     animation: textAnimation 3s ease infinite;
 }
-
+ 
 blockquote {
-    font-weight:bold
+    font-weight: bold;
 }
 
-.blind img{
+ 
+.blind img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -124,7 +116,7 @@ blockquote {
     height: auto;
 }
 
-
+ 
 @keyframes textAnimation {
     0%, 100% {
         color: blue;
@@ -136,8 +128,78 @@ blockquote {
     }
 }
 
-@media only screen and (max-width: 600px){
-.container{
-  flex-direction: column;
+ 
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;  
+    }
+
+    .container img {
+        width: 50%;  
+        margin: 2vw;  
+    }
+
+    .container p {
+        width: 80%;  
+        font-size: 4vw;  
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;  
+    }
+
+    table {
+        width: 100%;  
+        margin: 10px 0;  
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
 }
+
+ 
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container img {
+        width: 40%;
+    }
+
+    .container p {
+        width: 70%;
+        font-size: 3vw;
+    }
+
+    nav ul li {
+        margin: 10px 15px;
+    }
+
+    table {
+        width: 80%;
+    }
+}
+
+ 
+@media only screen and (min-width: 1200px) {
+    .container img {
+        width: 20%;
+    }
+
+    .container p {
+        width: 30%;
+        font-size: 1.5vw;
+    }
+
+    nav ul li {
+        margin: 0 30px;
+    }
+
+    table {
+        width: 60%;
+    }
 }
