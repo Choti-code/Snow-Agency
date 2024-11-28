@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Agency - Contact</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet2.css"/>
+</head>
+<body>
+    <center><h1>Contact Us</h1></center>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="Contact_form.html">Contact Us</a></li>
+			 
+        </ul>
+    </nav>
+
+    <center><h3>Get in touch with us!<br>(Please include a message outlining your query)</h3></center>
+    
+
+    <div role="form" id="contact-info" aria-label="Contact Information">
+        <form onsubmit="return validateForm()">
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="number">Phone number:</label>
+                <input type="number" id="tel" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="input-group">
+                <label for="textarea">Message:</label>
+                <textarea type="textarea" id="textarea" placeholder="Enter a message" required></textarea> 
+            </div>
+            <div>
+                <label for="submit"></label>
+                <input type="submit" id="submit" value="Submit">
+                <label for="reset"></label>
+                <input type="reset" id="reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>
