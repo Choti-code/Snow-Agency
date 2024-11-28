@@ -198,8 +198,47 @@ blockquote {
     nav ul li {
         margin: 0 30px;
     }
-
+   
     table {
         width: 60%;
     }
+}
+
+
+//css for CA 5
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    font-family: Georgia, serif;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+textarea  
+{  
+    font-family: Georgia, serif;
+    font-size: 14px;   
 }
