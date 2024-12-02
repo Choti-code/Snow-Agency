@@ -1,9 +1,12 @@
 function validateForm() {
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
+    let number = document.getElementById('tel').value;
+    let message = document.getElementById('textarea').value;
 
-    if (name === '' || email === '') {
-        alert('Name and email are required');
+    if (name === '' || email === '' || number == '' || message == '')
+        {
+        alert('All areas are required');
         return false;
     }
     
